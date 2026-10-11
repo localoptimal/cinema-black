@@ -1,0 +1,12 @@
+[package]
+name = "cinema-black"
+version = "1.0.0"
+edition = "2021"
+license = "MIT"
+description = "A native macOS black window for cinema lights-off on a selected display"
+
+[profile.release]
+lto = true
+codegen-units = 1
+strip = true
+panic = "abort"
